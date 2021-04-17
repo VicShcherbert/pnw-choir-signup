@@ -8,13 +8,11 @@ import {
   Header,
   Modal,
   Label,
-  Message,
   Image,
 } from 'semantic-ui-react';
 import { EnglishExplanation } from '../src/components/english-explanation';
 import { WrongInformation } from '../src/components/warnings';
-// import ChipEating from '../../images/chipapple.gif';
-import ChipEating from '../src/images/chipapple.gif';
+import PNWChoirLogo from '../src/images/PNWChoir.jpg';
 
 import 'semantic-ui-css/semantic.min.css';
 
@@ -63,16 +61,19 @@ const App = () => {
 
   const { firstName, lastName } = submission;
 
-  const saveFirstName = firstName.valueOf;
-
   const handleChange = (e) => {
     setSubmission({ ...submission, [e.target.name]: e.target.value });
   };
+
+  var theName = '';
+  console.log(theName);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(submission);
     // setFirstName(e.currentTarget.name.value);
+    localStorage.setItem('personsName', firstName);
+    theName = localStorage.getItem('personsName');
     try {
       const response = await fetch(
         'https://v1.nocodeapi.com/vicshcherbert/google_sheets/PVgrkbBqzWnNrUuW?tabId=Sheet1',
@@ -95,21 +96,48 @@ const App = () => {
 
   return (
     <Segment basic>
-      <Header as='h1' textAlign='center'>
-        2021 Youth Conference Choir PNW Sign-Up
-      </Header>
-      <Segment basic textAlign='center'>
-        <Button onClick={turnOnEnglishHandler} size='large'>
-          English
-          <br />
-          language
-        </Button>
-        <Button onClick={turnOnRussianHandler} size='large'>
-          Русский
-          <br />
-          язык
-        </Button>
-      </Segment>
+      {languageToggle.displayEnglish !== true &&
+      languageToggle.displayRussian !== true ? (
+        <Segment basic textAlign='center'>
+          <Box sx={{
+            margin: '4px'
+          }}>
+            <Image
+              src={PNWChoirLogo}
+              size='medium'
+              verticalAlign='middle'
+            ></Image>
+          </Box>
+          <Button onClick={turnOnEnglishHandler} size='large'>
+            English
+            <br />
+            language
+          </Button>
+          <Button onClick={turnOnRussianHandler} size='large'>
+            Русский
+            <br />
+            язык
+          </Button>
+        </Segment>
+      ) : (
+        <Segment basic>
+          <Header as='h1' textAlign='center'>
+            2021 Youth Conference PNW Choir Sign-Up
+          </Header>
+          <Segment basic textAlign='center'>
+            <Button onClick={turnOnEnglishHandler} size='large'>
+              English
+              <br />
+              language
+            </Button>
+            <Button onClick={turnOnRussianHandler} size='large'>
+              Русский
+              <br />
+              язык
+            </Button>
+          </Segment>
+        </Segment>
+      )}
 
       {languageToggle.displayEnglish ? (
         <Segment basic>
@@ -204,11 +232,10 @@ const App = () => {
 
             {submitDisplay.modalDisplayOn ? (
               <Modal open>
-                <Modal.Header>Test</Modal.Header>
+                <Modal.Header>Success!</Modal.Header>
                 <Modal.Content>
                   <Box sx={{ fontSize: '16px' }}>
-                    Thanks {saveFirstName} for registering! See you at the
-                    conference!
+                    Thanks {theName} for registering! See you at the conference!
                   </Box>
                 </Modal.Content>
                 <Modal.Actions>

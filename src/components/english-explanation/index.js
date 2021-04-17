@@ -25,7 +25,7 @@ export const EnglishExplanation = () => {
             fontSize: '16px',
           }}
         >
-          We are singing as a choir at the California youth conference. We will
+          We are singing as a choir at the California youth conference for the glory of God. We will
           be practicing songs seperately and then will rehearse the songs
           together at the youth conference.
         </Box>
@@ -85,7 +85,7 @@ export const EnglishExplanation = () => {
             Apple Maps
           </Button> */}
           <br />
-          <Box sx={{textAlign: 'center'}}>
+          <Box sx={{ textAlign: 'center' }}>
             Directions:
             <br />
             <Image
@@ -115,7 +115,8 @@ export const EnglishExplanation = () => {
           }}
         >
           Below is a link to the songs that we will sing during the conference.
-          There are three russian songs and one english song that we will sing with orchestra:
+          There are three russian songs and one english song that we will sing
+          with orchestra:
           <br />
           <List bulleted>
             <List.Item>Поспеши, Боже</List.Item>
@@ -128,8 +129,22 @@ export const EnglishExplanation = () => {
             target='_blank'
             rel='noreferrer'
           >
-            Google Drive
+            Sheet Music
           </Button>
+        </Box>
+      </Segment>
+
+      <Segment color='green'>
+        <Header as='h3' size='large'>
+          What We Will Wear
+        </Header>
+        <Divider/>
+        <Box
+          sx={{
+            fontSize: '16px',
+          }}
+        >
+          We will wear <b>black & white</b>, not pink and purple with lime green dots or something like that.
         </Box>
       </Segment>
     </Box>

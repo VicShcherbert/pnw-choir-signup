@@ -115,7 +115,7 @@ const App = () => {
             language
           </Button>
           <Button onClick={turnOnRussianHandler} size='large'>
-            Русский
+            Русскийkk
             <br />
             язык
           </Button>

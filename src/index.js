@@ -96,7 +96,6 @@ const App = () => {
 
   return (
     <Segment basic>
-      Hi
       {languageToggle.displayEnglish !== true &&
       languageToggle.displayRussian !== true ? (
         <Segment basic textAlign='center'>
@@ -115,7 +114,7 @@ const App = () => {
             language
           </Button>
           <Button onClick={turnOnRussianHandler} size='large'>
-            Русскийkk
+            Русский
             <br />
             язык
           </Button>

@@ -11,6 +11,7 @@ import {
   Image,
 } from 'semantic-ui-react';
 import { EnglishExplanation } from '../src/components/english-explanation';
+import { RussianExplanation } from '../src/components/russian-explanation';
 import { WrongInformation } from '../src/components/warnings';
 import PNWChoirLogo from '../src/images/PNWChoir.jpg';
 
@@ -142,7 +143,6 @@ const App = () => {
       {languageToggle.displayEnglish ? (
         <Segment basic>
           <WrongInformation />
-
           <EnglishExplanation />
           <Header as='h2' size='large'>
             Register
@@ -253,30 +253,115 @@ const App = () => {
       ) : null}
 
       {languageToggle.displayRussian ? (
-        <Form onSubmit={handleSubmit}>
-          <Form.Field>
-            <label>Имя</label>
-            <input
-              placeholder='Имя'
-              value={firstName}
-              name='firstName'
-              onChange={handleChange}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>Фамилия</label>
-            <input
-              placeholder='Фамилия'
-              value={lastName}
-              name='lastName'
-              onChange={handleChange}
-            />
-          </Form.Field>
+        <Segment basic>
+          <WrongInformation />
+          <RussianExplanation />
+          <Header as='h2' size='large'>
+            Регистрация
+          </Header>
+          <Segment color='green'>
+            <Box
+              sx={{
+                fontSize: '16px',
+              }}
+            >
+              Чтобы узнать сколько людей будут петь и сколько папок надо приготовить,
+              пожалуйста зарегестрировайтесь внизу.
+            </Box>
+          </Segment>
 
-          <Button color='green' type='submit'>
-            Submit
-          </Button>
-        </Form>
+          <Form onSubmit={handleSubmit}>
+            <Form.Field>
+              <Header as='h4' size='medium'>
+                Имя
+              </Header>
+              <input
+                placeholder='Имя'
+                value={firstName}
+                name='firstName'
+                onChange={handleChange}
+              />
+            </Form.Field>
+
+            <Form.Field>
+              <Header as='h4' size='medium'>
+                Фамилия
+              </Header>
+              <input
+                placeholder='Фамилия'
+                value={lastName}
+                name='lastName'
+                onChange={handleChange}
+              />
+            </Form.Field>
+            <Form.Group grouped>
+              <Header as='h4' size='medium'>
+                Какую партию вы поёте?
+              </Header>
+
+              <Form.Radio
+                label='Сопрано'
+                checked={partSinging === 'Soprano'}
+                value='Soprano'
+                onClick={() => setPartSinging('Soprano')}
+                size='massive'
+              />
+              <Form.Radio
+                label='Альт'
+                checked={partSinging === 'Alto'}
+                value='Alto'
+                onClick={() => setPartSinging('Alto')}
+              />
+              <Form.Radio
+                label='Тенор'
+                checked={partSinging === 'Tenor'}
+                value='Tenor'
+                onClick={() => setPartSinging('Tenor')}
+              />
+              <Form.Radio
+                label='Бас'
+                checked={partSinging === 'Bass'}
+                value='Bass'
+                onClick={() => setPartSinging('Bass')}
+              />
+            </Form.Group>
+            {submission.firstName !== '' &&
+            submission.lastName !== '' &&
+            partSinging.part !== '' ? (
+              <Button color='green' type='submit' onClick={turnOnDisplay}>
+                Submit
+              </Button>
+            ) : (
+              <Label
+                basic
+                color='black'
+                size='large'
+                style={{ height: '36px', paddingTop: '10px' }}
+              >
+                Заполните все фиелдс
+              </Label>
+            )}
+
+            {submitDisplay.modalDisplayOn ? (
+              <Modal open>
+                <Modal.Header>Success!</Modal.Header>
+                <Modal.Content>
+                  <Box sx={{ fontSize: '16px' }}>
+                    Спасибо что вы зарегестрировались! Увидимся на конференции!
+                  </Box>
+                </Modal.Content>
+                <Modal.Actions>
+                  <Button color='red' onClick={startPlaying}>
+                    Поговорить с мэнаджером
+                  </Button>
+                  <Button color='green' onClick={() => setSubmitDisplay(false)}>
+                    Закрыть
+                  </Button>
+                </Modal.Actions>
+              </Modal>
+            ) : null}
+          </Form>
+        </Segment>
       ) : null}
     </Segment>
   );

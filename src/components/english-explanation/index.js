@@ -17,7 +17,7 @@ export const EnglishExplanation = () => {
     <Box>
       <Segment color='green'>
         <Header as='h3' size='large'>
-          What We Are Doing
+          What we are doing
         </Header>
         <Divider />
         <Box
@@ -25,15 +25,16 @@ export const EnglishExplanation = () => {
             fontSize: '16px',
           }}
         >
-          We are singing as a choir at the California youth conference for the glory of God. We will
-          be practicing songs seperately and then will rehearse the songs
+          We are singing as a choir at the California youth conference for the
+          glory of God. We will be practicing songs seperately (Eastern
+          Washington, Western Washington) and then will rehearse the songs
           together at the youth conference.
         </Box>
       </Segment>
 
       <Segment color='green'>
         <Header as='h3' size='large'>
-          When We Are Singing
+          When we are singing
         </Header>
         <Divider />
         <Box
@@ -50,7 +51,7 @@ export const EnglishExplanation = () => {
 
       <Segment color='green'>
         <Header as='h3' size='large'>
-          Where We Are Singing
+          Where we are singing
         </Header>
         <Divider />
         <Box
@@ -67,23 +68,6 @@ export const EnglishExplanation = () => {
           <br />
           Sacramento, CA 95838
           <br />
-          {/* <br />
-          <Button
-            basic
-            href='https://goo.gl/maps/KHsPvzXgUcH7YqAHA'
-            target='_blank'
-            icon='map'
-          >
-            Google Maps
-          </Button>
-          <Button
-            basic
-            href='https://maps.apple.com/?address=4659%20Dry%20Creek%20Rd,%20Sacramento,%20CA%20%2095838,%20United%20States&ll=38.653083,-121.438922&q=4659%20Dry%20Creek%20Rd&_ext=EiYpWGDZBwVTQ0AxXp4YhnVcXsA51jX/YytUQ0BBqCImD7lbXsBQBA%3D%3D'
-            target='_blank'
-            icon='map'
-          >
-            Apple Maps
-          </Button> */}
           <br />
           <Box sx={{ textAlign: 'center' }}>
             Directions:
@@ -106,7 +90,7 @@ export const EnglishExplanation = () => {
 
       <Segment color='green'>
         <Header as='h3' size='large'>
-          What We Are Singing
+          What we are singing
         </Header>
         <Divider />
         <Box
@@ -115,8 +99,8 @@ export const EnglishExplanation = () => {
           }}
         >
           Below is a link to the songs that we will sing during the conference.
-          There are three russian songs and one english song that we will sing
-          with orchestra:
+          There are three russian songs and one english song (which we will sing 
+          with orchestra):
           <br />
           <List bulleted>
             <List.Item>Поспеши, Боже</List.Item>
@@ -136,15 +120,16 @@ export const EnglishExplanation = () => {
 
       <Segment color='green'>
         <Header as='h3' size='large'>
-          What We Will Wear
+          What we will wear
         </Header>
-        <Divider/>
+        <Divider />
         <Box
           sx={{
             fontSize: '16px',
           }}
         >
-          We will wear <b>black & white</b>, not pink and purple with lime green dots or something like that.
+          We will wear <b>black & white</b>, not pink and purple with lime green
+          dots or something like that.
         </Box>
       </Segment>
     </Box>

@@ -133,7 +133,7 @@ export const EnglishExplanation = () => {
         </Box>
       </Segment>
 
-      <Segment color='black'>
+      {/* <Segment color='black'>
         <Header as='h3' size='large'>
           Singing at the evangelism conference
         </Header>
@@ -154,7 +154,7 @@ export const EnglishExplanation = () => {
           <br />
           This will help us prepare for the California conference!
         </Box>
-      </Segment>
+      </Segment> */}
     </Box>
   );
 };

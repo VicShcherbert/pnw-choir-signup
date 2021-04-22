@@ -133,7 +133,7 @@ export const RussianExplanation = () => {
         </Box>
       </Segment>
 
-      <Segment color='black'>
+      {/* <Segment color='black'>
         <Header as='h3' size='large'>
           Пение на сонференции по благовестию
         </Header>
@@ -154,7 +154,7 @@ export const RussianExplanation = () => {
           <br />
           Это поможет нам подготовиться к участию на Калифорнийской конференции!
         </Box>
-      </Segment>
+      </Segment> */}
     </Box>
   );
 };

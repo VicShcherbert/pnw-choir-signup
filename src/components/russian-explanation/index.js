@@ -25,9 +25,10 @@ export const RussianExplanation = () => {
             fontSize: '16px',
           }}
         >
-          Мы будем петь хором на Калифорнийском молодёжном общении во славу Богу. 
-          Мы будем репетировать песни по отдельности (Eastern Washington, Western Washington) и
-          потом будем вместе репетировать песни на молодежной конференции.
+          Мы будем петь хором на Калифорнийском молодёжном общении во славу
+          Богу. Мы будем репетировать песни по отдельности (Eastern Washington,
+          Western Washington) и потом будем вместе репетировать песни на
+          молодежной конференции.
         </Box>
       </Segment>
 
@@ -98,15 +99,15 @@ export const RussianExplanation = () => {
             fontSize: '16px',
           }}
         >
-          Внизу ссылка на песни которые мы будем петь на конференции. Будем петь
-          три русских песен и одну английскую песню которую будем петь с
-          оркестром:
+          Внизу ссылка на песни которые мы будем петь на конференции.
+          Мы споём две русские песни и две американские песни (одну будем петь с
+          оркестром):
           <br />
           <List bulleted>
             <List.Item>Поспеши, Боже</List.Item>
-            <List.Item>Небо надо мной</List.Item>
-            <List.Item>In Christ Alone (с оркестром)</List.Item>
+            <List.Item>You Are the Christ, the Son of God!</List.Item>
             <List.Item>Бог наш милостив</List.Item>
+            <List.Item>In Christ Alone (с оркестром)</List.Item>
           </List>
           <Button
             href='https://drive.google.com/drive/folders/1svtc3TfieElbrANRA_etdiAqOVo6I5nz?usp=sharing'
@@ -129,6 +130,29 @@ export const RussianExplanation = () => {
           }}
         >
           <b>Черная и белая</b> форма.
+        </Box>
+      </Segment>
+
+      <Segment color='black'>
+        <Header as='h3' size='large'>
+          Пение на сонференции по благовестию
+        </Header>
+        <Divider />
+        <Box
+          sx={{
+            fontSize: '16px',
+          }}
+        >
+          В <b>субботу, 15ого мая</b>, будет конференция по благовестию.
+          У нас будет репретиция в <b>сометчинг пм</b> и мы будем петь на конференции
+          которая начинается в <b>сометчинг пм</b>.
+          <br />
+          <br />
+          На следующий день, <b>Воскресение, 16ого мая</b>, мы будем петь в поместной церкви
+          на утрешнем служении.
+          <br />
+          <br />
+          Это поможет нам подготовиться к участию на Калифорнийской конференции!
         </Box>
       </Segment>
     </Box>

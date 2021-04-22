@@ -99,14 +99,14 @@ export const EnglishExplanation = () => {
           }}
         >
           Below is a link to the songs that we will sing during the conference.
-          There are three russian songs and one english song (which we will sing 
-          with orchestra):
+          There are two russian songs and two english song (one english song we
+          will sing with orchestra):
           <br />
           <List bulleted>
             <List.Item>Поспеши, Боже</List.Item>
-            <List.Item>Небо надо мной</List.Item>
-            <List.Item>In Christ Alone (with orchestra)</List.Item>
+            <List.Item>You Are the Christ, the Son of God!</List.Item>
             <List.Item>Бог наш милостив</List.Item>
+            <List.Item>In Christ Alone (with orchestra)</List.Item>
           </List>
           <Button
             href='https://drive.google.com/drive/folders/1svtc3TfieElbrANRA_etdiAqOVo6I5nz?usp=sharing'
@@ -130,6 +130,29 @@ export const EnglishExplanation = () => {
         >
           We will wear <b>black & white</b>, not pink and purple with lime green
           dots or something like that.
+        </Box>
+      </Segment>
+
+      <Segment color='black'>
+        <Header as='h3' size='large'>
+          Singing at the evangelism conference
+        </Header>
+        <Divider />
+        <Box
+          sx={{
+            fontSize: '16px',
+          }}
+        >
+          On <b>Saturday, May 15th</b>, there will be an evangelism conference.
+          We will have a rehearsal at <b>something pm</b> and will perform the
+          songs at the conference which starts at <b>somethign ppm</b>.
+          <br />
+          <br />
+          On the following day <b>Sunday, May 16th</b>, we will sing at a local church
+          on their morning service.
+          <br />
+          <br />
+          This will help us prepare for the California conference!
         </Box>
       </Segment>
     </Box>

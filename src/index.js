@@ -12,7 +12,7 @@ import {
 } from 'semantic-ui-react';
 import { EnglishExplanation } from '../src/components/english-explanation';
 import { RussianExplanation } from '../src/components/russian-explanation';
-import { WrongInformation } from '../src/components/warnings';
+import { WrongInformationEnglish, WrongInformationRussian, RegisterBelowEnglish, RegisterBelowRussian } from '../src/components/warnings';
 import PNWChoirLogo from '../src/images/PNWChoir.jpg';
 
 import 'semantic-ui-css/semantic.min.css';
@@ -142,7 +142,8 @@ const App = () => {
 
       {languageToggle.displayEnglish ? (
         <Segment basic>
-          <WrongInformation />
+          <WrongInformationEnglish />
+          <RegisterBelowEnglish />
           <EnglishExplanation />
           <Header as='h2' size='large'>
             Register
@@ -254,7 +255,8 @@ const App = () => {
 
       {languageToggle.displayRussian ? (
         <Segment basic>
-          <WrongInformation />
+          <WrongInformationRussian />
+          <RegisterBelowRussian />
           <RussianExplanation />
           <Header as='h2' size='large'>
             Регистрация
@@ -329,7 +331,7 @@ const App = () => {
             submission.lastName !== '' &&
             partSinging.part !== '' ? (
               <Button color='green' type='submit' onClick={turnOnDisplay}>
-                Submit
+                Отправить
               </Button>
             ) : (
               <Label

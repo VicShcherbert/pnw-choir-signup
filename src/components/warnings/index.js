@@ -33,7 +33,7 @@ export const RegisterBelowEnglish = () => {
   return (
     <Message positive>
       <Message.Header>
-        Attention! Register below
+        Attention! Register below.
       </Message.Header>
       <p>
         After reading all the information, please register below.
@@ -46,10 +46,10 @@ export const RegisterBelowRussian = () => {
   return (
     <Message positive>
       <Message.Header>
-        Внимание! Зарегестрировайтесь внизу
+        Внимание! Зарегистрируйтесь внизу.
       </Message.Header>
       <p>
-        После того как вы прочитаете всю информацию, зарегестрировайтесь внизу страницы.
+        После того как вы прочитаете всю информацию, зарегистрируйтесь внизу страницы.
       </p>
     </Message>
   );

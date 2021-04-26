@@ -10,12 +10,13 @@ import {
   Label,
   Image,
 } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
+
 import { EnglishExplanation } from '../src/components/english-explanation';
 import { RussianExplanation } from '../src/components/russian-explanation';
 import { WrongInformationEnglish, WrongInformationRussian, RegisterBelowEnglish, RegisterBelowRussian } from '../src/components/warnings';
 import PNWChoirLogo from '../src/images/PNWChoir.jpg';
 
-import 'semantic-ui-css/semantic.min.css';
 
 const App = () => {
   let audio = new Audio('/DTWrong.mp3');
@@ -142,7 +143,7 @@ const App = () => {
 
       {languageToggle.displayEnglish ? (
         <Segment basic>
-          <WrongInformationEnglish />
+          {/* <WrongInformationEnglish /> */}
           <RegisterBelowEnglish />
           <EnglishExplanation />
           <Header as='h2' size='large'>
@@ -155,7 +156,7 @@ const App = () => {
               }}
             >
               In order to figure out how many people will be singing and how
-              many folders we need, please register below
+              many folders we need, please, register below
             </Box>
           </Segment>
 
@@ -255,7 +256,7 @@ const App = () => {
 
       {languageToggle.displayRussian ? (
         <Segment basic>
-          <WrongInformationRussian />
+          {/* <WrongInformationRussian /> */}
           <RegisterBelowRussian />
           <RussianExplanation />
           <Header as='h2' size='large'>
@@ -268,7 +269,7 @@ const App = () => {
               }}
             >
               Чтобы узнать сколько людей будут петь и сколько папок надо приготовить,
-              пожалуйста зарегестрировайтесь внизу.
+              пожалуйста, зарегистрируйтесь внизу.
             </Box>
           </Segment>
 
@@ -340,7 +341,7 @@ const App = () => {
                 size='large'
                 style={{ height: '36px', paddingTop: '10px' }}
               >
-                Заполните все фиелдс
+                Заполните все поля
               </Label>
             )}
 
@@ -349,7 +350,7 @@ const App = () => {
                 <Modal.Header>Success!</Modal.Header>
                 <Modal.Content>
                   <Box sx={{ fontSize: '16px' }}>
-                    Спасибо что вы зарегестрировались! Увидимся на конференции!
+                    Спасибо что вы зарегистрировались! Увидимся на конференции!
                   </Box>
                 </Modal.Content>
                 <Modal.Actions>

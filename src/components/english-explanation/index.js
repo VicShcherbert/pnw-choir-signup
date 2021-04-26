@@ -128,33 +128,10 @@ export const EnglishExplanation = () => {
             fontSize: '16px',
           }}
         >
-          We will wear <b>black & white</b>, not pink and purple with lime green
+          We will wear <b>white top & black bottom</b>, not pink and purple with lime green
           dots or something like that.
         </Box>
       </Segment>
-
-      {/* <Segment color='black'>
-        <Header as='h3' size='large'>
-          Singing at the evangelism conference
-        </Header>
-        <Divider />
-        <Box
-          sx={{
-            fontSize: '16px',
-          }}
-        >
-          On <b>Saturday, May 15th</b>, there will be an evangelism conference.
-          We will have a rehearsal at <b>something pm</b> and will perform the
-          songs at the conference which starts at <b>somethign ppm</b>.
-          <br />
-          <br />
-          On the following day <b>Sunday, May 16th</b>, we will sing at a local church
-          on their morning service.
-          <br />
-          <br />
-          This will help us prepare for the California conference!
-        </Box>
-      </Segment> */}
     </Box>
   );
 };

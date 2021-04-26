@@ -14,9 +14,11 @@ import 'semantic-ui-css/semantic.min.css';
 
 import { EnglishExplanation } from '../src/components/english-explanation';
 import { RussianExplanation } from '../src/components/russian-explanation';
-import { WrongInformationEnglish, WrongInformationRussian, RegisterBelowEnglish, RegisterBelowRussian } from '../src/components/warnings';
+import {
+  RegisterBelowEnglish,
+  RegisterBelowRussian,
+} from '../src/components/warnings';
 import PNWChoirLogo from '../src/images/PNWChoir.jpg';
-
 
 const App = () => {
   let audio = new Audio('/DTWrong.mp3');
@@ -68,12 +70,9 @@ const App = () => {
   };
 
   var theName = '';
-  console.log(theName);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(submission);
-    // setFirstName(e.currentTarget.name.value);
     localStorage.setItem('personsName', firstName);
     theName = localStorage.getItem('personsName');
     try {
@@ -101,9 +100,11 @@ const App = () => {
       {languageToggle.displayEnglish !== true &&
       languageToggle.displayRussian !== true ? (
         <Segment basic textAlign='center'>
-          <Box sx={{
-            margin: '4px'
-          }}>
+          <Box
+            sx={{
+              margin: '4px',
+            }}
+          >
             <Image
               src={PNWChoirLogo}
               size='medium'
@@ -268,8 +269,8 @@ const App = () => {
                 fontSize: '16px',
               }}
             >
-              Чтобы узнать сколько людей будут петь и сколько папок надо приготовить,
-              пожалуйста, зарегистрируйтесь внизу.
+              Чтобы узнать сколько людей будут петь и сколько папок надо
+              приготовить, пожалуйста, зарегистрируйтесь внизу.
             </Box>
           </Segment>
 

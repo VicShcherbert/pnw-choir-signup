@@ -1,5 +1,5 @@
 import React from 'react';
-import { Message, Segment } from 'semantic-ui-react';
+import { Message } from 'semantic-ui-react';
 
 export const WrongInformationEnglish = () => {
   return (

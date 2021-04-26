@@ -8,7 +8,7 @@ import {
   Image,
 } from 'semantic-ui-react';
 import { Box } from 'theme-ui';
-import GoogleMapsPic from '../../images/googlemaps.jpeg';
+
 import GoogleMapsPic2 from '../../images/googlemaps2.png';
 import AppleMapsPic from '../../images/applemaps.png';
 

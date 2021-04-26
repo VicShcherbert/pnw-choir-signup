@@ -99,7 +99,7 @@ export const EnglishExplanation = () => {
           }}
         >
           Below is a link to the songs that we will sing during the conference.
-          There are two russian songs and two english song (one english song we
+          There are two russian songs and two english songs (one english song we
           will sing with orchestra):
           <br />
           <List bulleted>

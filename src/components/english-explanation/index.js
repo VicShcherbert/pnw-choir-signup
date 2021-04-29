@@ -118,7 +118,7 @@ export const EnglishExplanation = () => {
         </Box>
       </Segment>
 
-      <Segment color='green'>
+      <Segment color='green' id={'clothesSection'}>
         <Header as='h3' size='large'>
           What we will wear
         </Header>
@@ -128,8 +128,16 @@ export const EnglishExplanation = () => {
             fontSize: '16px',
           }}
         >
-          We will wear <b>white top & black bottom</b>, not pink and purple with lime green
-          dots or something like that.
+          <List bulleted>
+            <List.Item>
+              Brothers will wear <b>white top & black bottom</b> (suits are
+              fine, etc.).
+            </List.Item>
+            <List.Item>
+              Sisters will wear <b>ALL black</b>, not pink and purple with lime
+              green dots or something like that.
+            </List.Item>
+          </List>
         </Box>
       </Segment>
     </Box>

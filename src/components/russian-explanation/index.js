@@ -43,7 +43,7 @@ export const RussianExplanation = () => {
           }}
         >
           Мы поём на второй день конференции:{' '}
-          <b>воскресенье, 30 мая 2021 г.</b>
+          <b>воскресенье, 30 мая 2021 г</b>.
           <br />
           <br />
           Спевка будет на <b>8 утра</b>.
@@ -119,7 +119,7 @@ export const RussianExplanation = () => {
         </Box>
       </Segment>
 
-      <Segment color='green'>
+      <Segment color='green' id='clothesSection'>
         <Header as='h3' size='large'>
           Что мы будем одевать
         </Header>
@@ -129,7 +129,14 @@ export const RussianExplanation = () => {
             fontSize: '16px',
           }}
         >
-          Форма: <b>белый верх, чёрный низ</b>.
+          <List bulleted>
+            <List.Item>
+              Для братьев, <b>белый верх, чёрный низ</b> (пиджаки можно одевать, и т.д.).
+            </List.Item>
+            <List.Item>
+              Для сестёр, <b>всё чёрное</b>.
+            </List.Item>
+          </List>
         </Box>
       </Segment>
     </Box>

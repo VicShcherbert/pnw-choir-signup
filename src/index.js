@@ -17,6 +17,8 @@ import { RussianExplanation } from '../src/components/russian-explanation';
 import {
   RegisterBelowEnglish,
   RegisterBelowRussian,
+  ClothesInfoUpdateEnglish,
+  ClothesInfoUpdateRussian,
 } from '../src/components/warnings';
 import PNWChoirLogo from '../src/images/PNWChoir.jpg';
 
@@ -127,7 +129,7 @@ const App = () => {
           <Header as='h1' textAlign='center'>
             2021 Youth Conference PNW Choir Sign-Up
           </Header>
-          <Segment basic textAlign='center'>
+          <Box sx={{textAlign: 'center', paddingTop: '15px'}}>
             <Button onClick={turnOnEnglishHandler} size='large'>
               English
               <br />
@@ -138,13 +140,14 @@ const App = () => {
               <br />
               язык
             </Button>
-          </Segment>
+          </Box>
         </Segment>
       )}
 
       {languageToggle.displayEnglish ? (
         <Segment basic>
           {/* <WrongInformationEnglish /> */}
+          <ClothesInfoUpdateEnglish/>
           <RegisterBelowEnglish />
           <EnglishExplanation />
           <Header as='h2' size='large'>
@@ -258,6 +261,7 @@ const App = () => {
       {languageToggle.displayRussian ? (
         <Segment basic>
           {/* <WrongInformationRussian /> */}
+          <ClothesInfoUpdateRussian />
           <RegisterBelowRussian />
           <RussianExplanation />
           <Header as='h2' size='large'>

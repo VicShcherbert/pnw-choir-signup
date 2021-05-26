@@ -147,7 +147,7 @@ const App = () => {
       {languageToggle.displayEnglish ? (
         <Segment basic>
           {/* <WrongInformationEnglish /> */}
-          <ClothesInfoUpdateEnglish/>
+          {/* <ClothesInfoUpdateEnglish/> */}
           <RegisterBelowEnglish />
           <EnglishExplanation />
           <Header as='h2' size='large'>
@@ -261,7 +261,7 @@ const App = () => {
       {languageToggle.displayRussian ? (
         <Segment basic>
           {/* <WrongInformationRussian /> */}
-          <ClothesInfoUpdateRussian />
+          {/* <ClothesInfoUpdateRussian /> */}
           <RegisterBelowRussian />
           <RussianExplanation />
           <Header as='h2' size='large'>

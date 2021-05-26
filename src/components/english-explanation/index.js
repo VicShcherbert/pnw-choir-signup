@@ -45,7 +45,9 @@ export const EnglishExplanation = () => {
           We will sing on the second day of the conference:{' '}
           <b>Sunday, May 30th, 2021</b>.<br />
           <br />
-          Rehearsal will be at a bright and early <b>8am</b>.
+          Our first rehearsal together will be on <b>Saturday the 29th, at 7:30pm</b>, after the youth conference. 
+          <br />
+          Our final rehearsal will be at a bright and early <b>8am on Sunday</b>.
         </Box>
       </Segment>
 
